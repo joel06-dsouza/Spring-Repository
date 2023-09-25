@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<bean id="lap" class="in.mindcraft.SpringDemo.Laptop">
+		<property name="lid" value="101"></property>			<!-- setter- injection-->
+		<property name="make" value="Lenovo"></property>
+		<property name="cost" value="10000"></property>
+	</bean>
+	
+	<bean id="l1" class="in.mindcraft.SpringDemo.Laptop">
+		<constructor-arg value="2001" ></constructor-arg>
+		<constructor-arg value="Apple" ></constructor-arg>
+		<constructor-arg value="200000" ></constructor-arg>
+	</bean>
+	
+	<bean id="l2" class="in.mindcraft.SpringDemo.Laptop">
+		<constructor-arg value="2001" ></constructor-arg>
+		<constructor-arg value="Apple" ></constructor-arg>
+		<constructor-arg value="200000" ></constructor-arg>
+		<constructor-arg value="Joel"></constructor-arg>
+	</bean>
+
+</beans>
